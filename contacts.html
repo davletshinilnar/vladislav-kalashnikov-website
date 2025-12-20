@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Контакты - Владислав Калашников — Баритон</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <div class="menu-panel">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+        <div>
+          <h3 style="margin:0;font-family:Playfair Display">Владислав Калашников</h3>
+          <div style="font-size:13px;color:var(--muted)">Баритон</div>
+        </div>
+        <button id="closeMobile" class="btn" aria-label="Закрыть меню">✕</button>
+      </div>
+      <nav style="display:flex;flex-direction:column">
+        <a href="index.html">Главная</a>
+        <a href="bio.html">Биография</a>
+        <a href="albums.html">Альбомы</a>
+        <a href="audio.html">Аудиозаписи</a>
+        <a href="video.html">Видеозаписи</a>
+        <a href="photos.html">Фотоальбом</a>
+        <a href="repertoire.html">Репертуар</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      
+    </div>
+  </div>
+
+  <div class="site">
+    <header class="main-header">
+      <div class="brand">
+        <div class="logo" style="background-image:url('../images/photo1.jpg');background-size:cover;background-position:center"></div>
+        <div>
+          <h1>Владислав Калашников</h1>
+          <p>Баритон</p>
+        </div>
+      </div>
+
+      <nav class="topnav" aria-label="Главное меню">
+        <a href="index.html">Главная</a>
+        <a href="bio.html">Биография</a>
+        <a href="albums.html">Альбомы</a>
+        <a href="audio.html">Аудиозаписи</a>
+        <a href="video.html">Видеозаписи</a>
+        <a href="photos.html">Фотоальбом</a>
+        <a href="repertoire.html">Репертуар</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      
+
+      <button id="burger" class="burger" aria-label="Открыть меню"><div></div></button>
+    </header>
+
+    <div class="columns">
+      <main>
+        <section class="card" aria-labelledby="contactsTitle">
+          <span id="contactsTitle" class="section-title">Контакты</span>
+          <div class="meta">Для записи и сотрудничества</div>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>Email</h3>
+              <p><a href="mailto:example@example.com">example@example.com</a></p>
+            </div>
+            
+            <div class="contact-item">
+              <h3>Телефон</h3>
+              <p>+7 (900) 000-00-00</p>
+            </div>
+            
+            <div class="contact-item">
+              <h3>Адрес</h3>
+              <p>г. Йошкар-Ола, ул. Примерная, д. 1</p>
+            </div>
+            
+            <div class="contact-item">
+              <h3>Социальные сети</h3>
+              <div class="social-links">
+                <a href="#" target="_blank">VK</a>
+                <a href="#" target="_blank">YouTube</a>
+                <a href="#" target="_blank">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="mapTitle">
+          <span id="mapTitle" class="section-title">Карта проезда</span>
+          <div class="meta">Как добраться</div>
+          <div class="map-container">
+            <!-- Здесь можно вставить карту Google Maps или Яндекс.Карты -->
+            <div style="background:#f5f5f5;height:300px;display:flex;align-items:center;justify-content:center;border-radius:8px">
+              <p>Карта проезда будет здесь</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <div class="profile card" style="padding:0;overflow:hidden">
+          <div class="profile-photo" style="background-image:url('../images/photo1.jpg')"></div>
+          <div style="padding:16px">
+            <div style="font-weight:700;font-family:Playfair Display">Владислав Калашников</div>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">Баритон</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>&copy; <span id="year"></span> Владислав Калашников — все права защищены.</footer>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Фотоальбом - Владислав Калашников — Баритон</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <div class="menu-panel">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+        <div>
+          <h3 style="margin:0;font-family:Playfair Display">Владислав Калашников</h3>
+          <div style="font-size:13px;color:var(--muted)">Баритон</div>
+        </div>
+        <button id="closeMobile" class="btn" aria-label="Закрыть меню">✕</button>
+      </div>
+      <nav style="display:flex;flex-direction:column">
+        <a href="index.html">Главная</a>
+        <a href="bio.html">Биография</a>
+        <a href="albums.html">Альбомы</a>
+        <a href="audio.html">Аудиозаписи</a>
+        <a href="video.html">Видеозаписи</a>
+        <a href="photos.html">Фотоальбом</a>
+        <a href="repertoire.html">Репертуар</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      
+    </div>
+  </div>
+
+  <div class="site">
+    <header class="main-header">
+      <div class="brand">
+        <div class="logo" style="background-image:url('../images/photo1.jpg');background-size:cover;background-position:center"></div>
+        <div>
+          <h1>Владислав Калашников</h1>
+          <p>Баритон</p>
+        </div>
+      </div>
+      <nav class="topnav" aria-label="Главное меню">
+        <a href="index.html">Главная</a>
+        <a href="bio.html">Биография</a>
+        <a href="albums.html">Альбомы</a>
+        <a href="audio.html">Аудиозаписи</a>
+        <a href="video.html">Видеозаписи</a>
+        <a href="photos.html">Фотоальбом</a>
+        <a href="repertoire.html">Репертуар</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      
+      
+      
+
+      <button id="burger" class="burger" aria-label="Открыть меню"><div></div></button>
+    </header>
+
+    <div class="columns">
+      <main>
+        <section class="card" aria-labelledby="photosTitle">
+          <span id="photosTitle" class="section-title">Фотоальбом</span>
+          <div class="meta">Полная подборка сценических и рекламных фото</div>
+          
+          <div class="gallery-grid" style="margin-top:20px">
+            <img src="../images/photo1.jpg" alt="Владислав Калашников" data-full="../images/photo1.jpg">
+            <img src="../images/photo2.jpg" alt="Выступление" data-full="../images/photo2.jpg">
+            <img src="../images/photo3.jpg" alt="Сцена" data-full="../images/photo3.jpg">
+            <img src="../images/photo4.jpg" alt="Фото 4" data-full="../images/photo4.jpg">
+            <img src="../images/photo5.jpg" alt="Фото 5" data-full="../images/photo5.jpg">
+            <img src="../images/photo6.jpg" alt="Фото 6" data-full="../images/photo6.jpg">
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <div class="profile card" style="padding:0;overflow:hidden">
+          <div class="profile-photo" style="background-image:url('../images/photo1.jpg')"></div>
+          <div style="padding:16px">
+            <div style="font-weight:700;font-family:Playfair Display">Владислав Калашников</div>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">Баритон</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>&copy; <span id="year"></span> Владислав Калашников — все права защищены.</footer>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/gallery.js"></script>
+
+  <!-- Fullscreen gallery viewer -->
+  <div id="viewer" class="viewer" aria-hidden="true" role="dialog" aria-label="Просмотр фотографий">
+    <button id="viewerClose" class="viewer-btn viewer-close" aria-label="Закрыть">✕</button>
+    <button id="viewerPrev" class="viewer-btn viewer-prev" aria-label="Предыдущая фотография">❮</button>
+    <img id="viewerImg" src="" alt="Просмотр фото">
+    <button id="viewerNext" class="viewer-btn viewer-next" aria-label="Следующая фотография">❯</button>
+  </div>
+
+</body>
+</html>

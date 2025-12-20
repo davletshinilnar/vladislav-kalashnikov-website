@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Видеозаписи - Владислав Калашников — Баритон</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <div class="menu-panel">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+        <div>
+          <h3 style="margin:0;font-family:Playfair Display">Владислав Калашников</h3>
+          <div style="font-size:13px;color:var(--muted)">Баритон</div>
+        </div>
+        <button id="closeMobile" class="btn" aria-label="Закрыть меню">✕</button>
+      </div>
+      <nav style="display:flex;flex-direction:column">
+        <a href="index.html">Главная</a>
+        <a href="bio.html">Биография</a>
+        <a href="albums.html">Альбомы</a>
+        <a href="audio.html">Аудиозаписи</a>
+        <a href="video.html" class="active">Видеозаписи</a>
+        <a href="photos.html">Фотоальбом</a>
+        <a href="repertoire.html">Репертуар</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="site">
+    <header class="main-header">
+      <div class="brand">
+        <div class="logo" style="background-image:url('../images/photo1.jpg');background-size:cover;background-position:center"></div>
+        <div>
+          <h1>Владислав Калашников</h1>
+          <p>Баритон</p>
+        </div>
+      </div>
+
+      <nav class="topnav" aria-label="Главное меню">
+        <a href="index.html">Главная</a>
+        <a href="bio.html">Биография</a>
+        <a href="albums.html">Альбомы</a>
+        <a href="audio.html">Аудиозаписи</a>
+        <a href="video.html" class="active">Видеозаписи</a>
+        <a href="photos.html">Фотоальбом</a>
+        <a href="repertoire.html">Репертуар</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <button id="burger" class="burger" aria-label="Открыть меню"><div></div></button>
+    </header>
+
+    <div class="columns">
+      <main>
+        <section class="card" aria-labelledby="videoTitle">
+          <span id="videoTitle" class="section-title">Видеозаписи</span>
+          <div class="meta">Клипы и выступления</div>
+          
+          <div class="video-gallery">
+            <!-- Видео 1 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/lvJk5CPPQAynXA')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 1">
+              </div>
+              <div class="video-info">
+                <h3>Some day</h3>
+                <p class="video-meta">Опера Верди • 2023</p>
+              </div>
+            </div>
+
+            <!-- Видео 2 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/0IMvN2O0eFItZA')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 2">
+              </div>
+              <div class="video-info">
+                <h3>Вечер романса Улан-Удэ</h3>
+                <p class="video-meta">Опера Верди • 2022</p>
+              </div>
+            </div>
+
+            <!-- Видео 3 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example3')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 3">
+              </div>
+              <div class="video-info">
+                <h3>Концерт в Йошкар-Оле</h3>
+                <p class="video-meta">Живое выступление • 2023</p>
+              </div>
+            </div>
+
+            <!-- Видео 4 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example4')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 4">
+              </div>
+              <div class="video-info">
+                <h3>Ария из Кармен</h3>
+                <p class="video-meta">Опера Бизе • 2022</p>
+              </div>
+            </div>
+
+            <!-- Видео 5 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example5')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 5">
+              </div>
+              <div class="video-info">
+                <h3>Романс "Снова туда"</h3>
+                <p class="video-meta">Сольный концерт • 2021</p>
+              </div>
+            </div>
+
+            <!-- Видео 6 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example6')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 6">
+              </div>
+              <div class="video-info">
+                <h3>Дуэт из Фауста</h3>
+                <p class="video-meta">Опера Гуно • 2023</p>
+              </div>
+            </div>
+
+            <!-- Видео 7 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example7')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 7">
+              </div>
+              <div class="video-info">
+                <h3>Сцена из Тоски</h3>
+                <p class="video-meta">Опера Пуччини • 2022</p>
+              </div>
+            </div>
+
+            <!-- Видео 8 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example8')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 8">
+              </div>
+              <div class="video-info">
+                <h3>Концерт в Улан-Удэ</h3>
+                <p class="video-meta">Гастрольное выступление • 2021</p>
+              </div>
+            </div>
+
+            <!-- Видео 9 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example9')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 9">
+              </div>
+              <div class="video-info">
+                <h3>Ария из Бал-маскарада</h3>
+                <p class="video-meta">Опера Верди • 2023</p>
+              </div>
+            </div>
+
+            <!-- Видео 10 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example10')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 10">
+              </div>
+              <div class="video-info">
+                <h3>Сцена из Пиковой дамы</h3>
+                <p class="video-meta">Опера Чайковского • 2022</p>
+              </div>
+            </div>
+
+            <!-- Видео 11 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example11')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 11">
+              </div>
+              <div class="video-info">
+                <h3>Концерт в Казани</h3>
+                <p class="video-meta">Фестиваль оперы • 2023</p>
+              </div>
+            </div>
+
+            <!-- Видео 12 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example12')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 12">
+              </div>
+              <div class="video-info">
+                <h3>Ария из Дон Паскуале</h3>
+                <p class="video-meta">Опера Доницетти • 2021</p>
+              </div>
+            </div>
+
+            <!-- Видео 13 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example13')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 13">
+              </div>
+              <div class="video-info">
+                <h3>Сцена из Князя Игоря</h3>
+                <p class="video-meta">Опера Бородина • 2022</p>
+              </div>
+            </div>
+
+            <!-- Видео 14 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example14')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 14">
+              </div>
+              <div class="video-info">
+                <h3>Концерт в Москве</h3>
+                <p class="video-meta">Центральный концертный зал • 2023</p>
+              </div>
+            </div>
+
+            <!-- Видео 15 -->
+            <div class="video-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example15')">
+                <div class="play-overlay">▶</div>
+                <img src="../images/video-placeholder.jpg" alt="Видео 15">
+              </div>
+              <div class="video-info">
+                <h3>Ария из Самсона</h3>
+                <p class="video-meta">Опера Сен-Санс • 2021</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <div class="profile card" style="padding:0;overflow:hidden">
+          <div class="profile-photo" style="background-image:url('../images/photo1.jpg')"></div>
+          <div style="padding:16px">
+            <div style="font-weight:700;font-family:Playfair Display">Владислав Калашников</div>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">Баритон</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>&copy; <span id="year"></span> Владислав Калашников — все права защищены.</footer>
+  </div>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="video-modal" aria-hidden="true">
+    <div class="video-modal-content">
+      <button class="video-modal-close" onclick="closeVideoModal()">✕</button>
+      <div id="videoContainer"></div>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/video-player.js"></script>
+</body>
+</html>

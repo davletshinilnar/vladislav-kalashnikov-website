@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Владислав Калашников — Баритон</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <div class="menu-panel">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+        <div>
+          <h3 style="margin:0;font-family:Playfair Display">Владислав Калашников</h3>
+          <div style="font-size:13px;color:var(--muted)">Баритон</div>
+        </div>
+        <button id="closeMobile" class="btn" aria-label="Закрыть меню">✕</button>
+      </div>
+      <nav style="display:flex;flex-direction:column">
+        <a href="index.html">Главная</a>
+        <a href="bio.html">Биография</a>
+        <a href="albums.html">Альбомы</a>
+        <a href="audio.html">Аудиозаписи</a>
+        <a href="video.html">Видеозаписи</a>
+        <a href="photos.html">Фотоальбом</a>
+        <a href="repertoire.html">Репертуар</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      
+    </div>
+  </div>
+
+  <div class="site">
+    <header class="main-header">
+      <div class="brand">
+        <div class="logo" style="background-image:url('images/photo1.jpg');background-size:cover;background-position:center"></div>
+        <div>
+          <h1>Владислав Калашников</h1>
+          <p>Баритон</p>
+        </div>
+      </div>
+
+      <nav class="topnav" aria-label="Главное меню">
+        <a href="index.html">Главная</a>
+        <a href="bio.html">Биография</a>
+        <a href="albums.html">Альбомы</a>
+        <a href="audio.html">Аудиозаписи</a>
+        <a href="video.html">Видеозаписи</a>
+        <a href="photos.html">Фотоальбом</a>
+        <a href="repertoire.html">Репертуар</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      
+
+      <button id="burger" class="burger" aria-label="Открыть меню"><div></div></button>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" style="background-image:url('images/bg.jpg')">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h2>Владислав Калашников — <span style="background:rgba(0,0,0,0.16);padding:3px 8px;border-radius:6px;color:var(--beige)">Баритон</span></h2>
+          <p class="lead"><strong>Путь в искусстве певца, баритона Владислава Калашникова</strong> — это пример стремительного творческого взлёта человека, сначала посвятившего себя другой профессии, а теперь уже ярко и плодотворно служащего оперному искусству, создавая один вдохновенный образ за другим.</p>
+          <a class="cta" href="audio.html">Послушать записи</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="columns">
+      <main>
+        <!-- Краткая биография -->
+        <section class="card bio" aria-labelledby="bioTitle">
+          <span id="bioTitle" class="section-title">Биография</span>
+          <p class="meta">Краткая автобиография и ключевые факты</p>
+          
+          <p><span class="highlight">Путь в искусстве певца, баритона Владислава Калашникова</span> — это пример стремительного творческого взлёта человека, сначала посвятившего себя другой профессии, а теперь уже ярко и плодотворно служащего оперному искусству, создавая один вдохновенный образ за другим.</p>
+          
+          <p><strong class="date">Родился:</strong> Владислав Михайлович Калашников — <strong>13 января 1951</strong>, село Новокиевский Увал, Амурская область.</p>
+          
+          <p>Будучи в зрелом возрасте, имея за плечами более чем 10-летний опыт инженерной профессии, в <strong class="date">1979</strong> году поступает в Благовещенское музыкальное училище и экстерном заканчивает его в <strong class="date">1982</strong> году по классу заслуженного артиста РСФСР Валерия Александровича Побережского.</p>
+          
+          <div style="text-align:center;margin:20px 0">
+            <a href="bio.html" class="btn">Читать полную биографию</a>
+          </div>
+        </section>
+
+        <!-- Альбомы -->
+        <section class="card" aria-labelledby="albumsTitle">
+          <span id="albumsTitle" class="section-title">Альбомы</span>
+          <div class="meta">Сольные CD-альбомы и записи</div>
+
+          <div class="albums-slider" id="albumsSlider" aria-hidden="false">
+            <div class="slides" id="slidesRow">
+              <div class="slide">
+                <div class="cover" style="background-image:url('images/cover1.jpg')"></div>
+                <div class="alb-title">Снова туда, где море огней (2002)</div>
+              </div>
+              <div class="slide">
+                <div class="cover" style="background-image:url('images/cover2.jpg')"></div>
+                <div class="alb-title">Non ti scordar di me… (2005)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-controls" aria-hidden="false">
+            <button id="albPrev" class="slider-btn" aria-label="Назад">‹</button>
+            <button id="albNext" class="slider-btn" aria-label="Вперёд">›</button>
+          </div>
+
+          <div style="text-align:center;margin:20px 0">
+            <a href="albums.html" class="btn">Все альбомы</a>
+          </div>
+        </section>
+
+        <!-- Аудиозаписи -->
+        <section class="card" aria-labelledby="audioTitle">
+          <span id="audioTitle" class="section-title">Аудиозаписи</span>
+          <div class="meta">Популярные треки</div>
+
+          <div class="player" role="region" aria-label="Аудиоплеер">
+            <div class="player-controls">
+              <button id="prevBtn" class="btn" aria-label="Предыдущий трек">⏮</button>
+              <button id="playBtn" class="btn primary" aria-label="Воспроизвести">▶︎</button>
+              <button id="nextBtn" class="btn" aria-label="Следующий трек">⏭</button>
+              <div style="flex:1;margin-left:8px">
+                <input id="progress" class="progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Прогресс">
+              </div>
+              <div class="time" id="time">00:00 / 00:00</div>
+            </div>
+
+            <audio id="audioNative" preload="metadata"></audio>
+
+            <ul id="trackList" class="track-list" aria-label="Плейлист">
+              <li data-src="audio/audio1.mp3" data-title="Снова туда, где море огней">
+                <div class="track-cover" style="background-image:url('images/cover1.jpg')"></div>
+                <div class="track-info">
+                  <div class="title">Снова туда, где море огней</div>
+                  <div class="small">2002 — популярные арии</div>
+                </div>
+              </li>
+              <li data-src="audio/audio2.mp3" data-title="Non ti scordar di me">
+                <div class="track-cover" style="background-image:url('images/cover2.jpg')"></div>
+                <div class="track-info">
+                  <div class="title">Non ti scordar di me</div>
+                  <div class="small">2005 — арии и романсы</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div style="text-align:center;margin:20px 0">
+            <a href="audio.html" class="btn">Все аудиозаписи</a>
+          </div>
+        </section>
+
+        <!-- Фотоальбом -->
+        <section class="card" aria-labelledby="photosTitle">
+          <span id="photosTitle" class="section-title">Фотоальбом</span>
+          <div class="meta">Подборка сценических и рекламных фото</div>
+          <div class="gallery-grid" style="margin-top:12px">
+            <img src="images/photo1.jpg" alt="Владислав Калашников">
+            <img src="images/photo2.jpg" alt="Выступление">
+            <img src="images/photo3.jpg" alt="Сцена">
+          </div>
+          <div style="text-align:center;margin:20px 0">
+            <a href="photos.html" class="btn">Все фотографии</a>
+          </div>
+        </section>
+        <!-- Видеозаписи (добавить в main секцию) -->
+        <section class="card" aria-labelledby="videoTitle">
+          <span id="videoTitle" class="section-title">Видеозаписи</span>
+          <div class="meta">Последние клипы и выступления</div>
+          
+          <div class="video-preview-grid">
+            <div class="video-preview-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example1')">
+                <div class="play-overlay">▶</div>
+                <img src="images/video-placeholder.jpg" alt="Ария из Риголетто">
+              </div>
+              <h4>Ария из Риголетто</h4>
+            </div>
+            
+            <div class="video-preview-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example2')">
+                <div class="play-overlay">▶</div>
+                <img src="images/video-placeholder.jpg" alt="Сцена из Травиаты">
+              </div>
+              <h4>Сцена из Травиаты</h4>
+            </div>
+            
+            <div class="video-preview-item">
+              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/example3')">
+                <div class="play-overlay">▶</div>
+                <img src="images/video-placeholder.jpg" alt="Концерт в Йошкар-Оле">
+              </div>
+              <h4>Концерт в Йошкар-Оле</h4>
+            </div>
+          </div>
+          
+          <div style="text-align:center;margin:20px 0">
+            <a href="video.html" class="btn">Все видеозаписи</a>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="profile card" style="padding:0;overflow:hidden">
+          <div class="profile-photo" style="background-image:url('images/photo1.jpg')"></div>
+          <div style="padding:16px">
+            <div style="font-weight:700;font-family:Playfair Display">Владислав Калашников</div>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">Баритон</div>
+            <p style="margin-top:12px;color:var(--dark-brown);font-size:14px"><strong>Кратко:</strong> исполнитель оперного и камерного репертуара, автор сольных программ и записей.</p>
+          </div>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="card contact-card">
+          <div class="section-title" style="font-size:16px">Контакты</div>
+          <p class="meta">Для записи и сотрудничества</p>
+          <p><strong>Email:</strong> <a href="mailto:example@example.com">example@example.com</a></p>
+          <p><strong>Телефон:</strong> +7 (900) 000-00-00</p>
+          <p style="color:var(--muted);font-size:13px;margin-top:8px">Адрес: г. Йошкар-Ола (пример)</p>
+          <div style="text-align:center;margin:15px 0">
+            <a href="contacts.html" class="btn btn-small">Все контакты</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>&copy; <span id="year"></span> Владислав Калашников — все права защищены.</footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/audio-player.js"></script>
+</body>
+</html>
