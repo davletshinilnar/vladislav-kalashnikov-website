@@ -5,13 +5,15 @@ function openVideo(yandexUrl) {
     
     if (!modal || !container) return;
     
-    // Извлекаем ID файла из URL Яндекс.Диска
-    const fileId = extractYandexFileId(yandexUrl);
-    
-    if (fileId) {
-        // Создаем iframe для встраивания видео
+    // Проверяем, является ли это прямой ссылкой на файл
+    if (yandexUrl.includes('/i/')) {
+        // Создаем iframe с параметром embed
+        const embedUrl = yandexUrl.includes('?embed=yes') ? yandexUrl : yandexUrl + '?embed=yes';
         const iframe = document.createElement('iframe');
-        iframe.src = `https://disk.yandex.ru/i/${fileId}`;
+        iframe.src = embedUrl;
+        iframe.width = '100%';
+        iframe.height = '100%';
+        iframe.frameBorder = '0';
         iframe.allow = 'fullscreen';
         iframe.setAttribute('allowfullscreen', '');
         
@@ -23,10 +25,11 @@ function openVideo(yandexUrl) {
         modal.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
     } else {
-        // Если не удалось извлечь ID, открываем в новой вкладке
+        // Если не удалось, открываем в новой вкладке
         window.open(yandexUrl, '_blank');
     }
 }
+
 
 function closeVideoModal() {
     const modal = document.getElementById('videoModal');
@@ -93,3 +96,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
