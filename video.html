@@ -64,16 +64,25 @@
           
           <div class="video-gallery">
             <!-- Видео 1 -->
-            <div class="video-item">
-              <div class="video-thumbnail" onclick="openVideo('https://disk.yandex.ru/i/lvJk5CPPQAynXA')">
-                <div class="play-overlay">▶</div>
-                <img src="../images/video-placeholder.jpg" alt="Видео 1">
-              </div>
-              <div class="video-info">
-                <h3>Some day</h3>
-                <p class="video-meta">Опера Верди • 2023</p>
-              </div>
-            </div>
+<div class="video-item">
+  <div class="video-thumbnail" onclick="openVKVideo()">
+    <div class="play-overlay">▶</div>
+    <img src="../images/video-placeholder.jpg" alt="Видео 1 — Some day">
+  </div>
+  <div class="video-info">
+    <h3>Some day</h3>
+    <p class="video-meta">Опера Верди • 2023</p>
+  </div>
+</div>
+
+<!-- Модальное окно для видео -->
+<div id="videoModal" class="video-modal" aria-hidden="true">
+  <div class="video-modal-content">
+    <button class="video-modal-close" onclick="closeVideoModal()">✕</button>
+    <div id="videoContainer"></div>
+  </div>
+</div>
+
 
             <!-- Видео 2 -->
             <div class="video-item">
@@ -272,4 +281,5 @@
   <script src="js/video-player.js"></script>
 </body>
 </html>
+
 
