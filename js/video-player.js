@@ -1,3 +1,75 @@
+// Видеоплеер для VK
+function openVKVideo(vkUrl) {
+    const modal = document.getElementById('videoModal');
+    const container = document.getElementById('videoContainer');
+    
+    if (!modal || !container) return;
+    
+    try {
+        // Создаем iframe для VK видео
+        const iframe = document.createElement('iframe');
+        iframe.src = vkUrl;
+        iframe.width = '100%';
+        iframe.height = '100%';
+        iframe.frameBorder = '0';
+        iframe.allow = 'autoplay; fullscreen; encrypted-media; picture-in-picture';
+        iframe.setAttribute('allowfullscreen', '');
+        iframe.style.border = 'none';
+        
+        // Очищаем контейнер и добавляем iframe
+        container.innerHTML = '';
+        container.appendChild(iframe);
+        
+        // Показываем модальное окно
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        
+    } catch (error) {
+        console.error('Ошибка при открытии VK видео:', error);
+        // Открываем в новой вкладке если встраивание не работает
+        window.open(vkUrl, '_blank');
+    }
+}
+
+// Остальные функции остаются без изменений...
+function openVideo(yandexUrl) {
+    // Открываем Яндекс видео в новой вкладке как запасной вариант
+    window.open(yandexUrl, '_blank');
+}
+
+function closeVideoModal() {
+    const modal = document.getElementById('videoModal');
+    const container = document.getElementById('videoContainer');
+    
+    if (!modal || !container) return;
+    
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = 'auto';
+    container.innerHTML = '';
+}
+
+// События закрытия остаются такими же...
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const modal = document.getElementById('videoModal');
+        if (modal && modal.getAttribute('aria-hidden') === 'false') {
+            closeVideoModal();
+        }
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('videoModal');
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeVideoModal();
+            }
+        });
+    }
+});
+
+
 // Видеоплеер для Яндекс.Диска
 function openVideo(yandexUrl) {
     const modal = document.getElementById('videoModal');
@@ -96,4 +168,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
 
