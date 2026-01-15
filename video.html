@@ -63,16 +63,16 @@
           <div class="meta">Клипы и выступления</div>
           
           <div class="video-gallery">
- <!-- Видео 1 -->
+ <!-- Видео 1 
   <div class="video-item"> <div class="video-thumbnail" onclick="openVKVideo('https://vkvideo.ru/video_ext.php?oid=167222959&id=456239035&hash=0041810f256fb130&hd=3')"> <div class="play-overlay">▶</div> <img src="./images/video-placeholder.jpg" alt="Some day"> </div> <div class="video-info"> <h3>Some day</h3> <p class="video-meta">Опера Верди • 2023</p> </div> </div>
 
 <!-- Модальное окно для видео -->
-<div id="videoModal" class="video-modal" aria-hidden="true">
+<!-- <div id="videoModal" class="video-modal" aria-hidden="true">
   <div class="video-modal-content">
     <button class="video-modal-close" onclick="closeVideoModal()">✕</button>
     <div id="videoContainer"></div>
   </div>
-</div>
+</div> -->
 
 
             <!-- Видео 2 -->
@@ -87,7 +87,66 @@
                 <p class="video-meta">Опера Верди • 2023</p>
               </div>
             </div>
+<div class="video-gallery">
+  <!-- Видео 1 -->
+  <div class="video-item">
+    <div class="video-thumbnail" onclick="openRutubeVideo('8488da29848f9c3376db2ba3349ec9a0')">
+      <div class="play-overlay">▶</div>
+      <img src="https://rutube.ru/video-thumbnail/8488da29848f9c3376db2ba3349ec9a0/" alt="Владислав Калашников. Ария из оперы «Риголетто»" onerror="this.src='./images/video-placeholder.jpg'">
+    </div>
+    <div class="video-info">
+      <h3>Владислав Калашников. Ария из оперы «Риголетто»</h3>
+      <p class="video-meta">Опера Верди • 2023</p>
+    </div>
+  </div>
 
+  <!-- Видео 2 -->
+  <div class="video-item">
+    <div class="video-thumbnail" onclick="openRutubeVideo('6d28c58a26f9d3086b859ac66381ce88')">
+      <div class="play-overlay">▶</div>
+      <img src="https://rutube.ru/video-thumbnail/6d28c58a26f9d3086b859ac66381ce88/" alt="Владислав Калашников. Сцена из оперы «Травиата»" onerror="this.src='./images/video-placeholder.jpg'">
+    </div>
+    <div class="video-info">
+      <h3>Владислав Калашников. Сцена из оперы «Травиата»</h3>
+      <p class="video-meta">Опера Верди • 2022</p>
+    </div>
+  </div>
+
+  <!-- Видео 3 -->
+  <div class="video-item">
+    <div class="video-thumbnail" onclick="openRutubeVideo('c87a1bfb200264bfd1025879bc37d6f6')">
+      <div class="play-overlay">▶</div>
+      <img src="https://rutube.ru/video-thumbnail/c87a1bfb200264bfd1025879bc37d6f6/" alt="Владислав Калашников. Концерт в Йошкар-Оле" onerror="this.src='./images/video-placeholder.jpg'">
+    </div>
+    <div class="video-info">
+      <h3>Владислав Калашников. Концерт в Йошкар-Оле</h3>
+      <p class="video-meta">Живое выступление • 2023</p>
+    </div>
+  </div>
+
+  <!-- Видео 4 -->
+  <div class="video-item">
+    <div class="video-thumbnail" onclick="openRutubeVideo('c9f5cf482a861976eff96717d2709dea')">
+      <div class="play-overlay">▶</div>
+      <img src="https://rutube.ru/video-thumbnail/c9f5cf482a861976eff96717d2709dea/" alt="Владислав Калашников. Ария из оперы «Кармен»" onerror="this.src='./images/video-placeholder.jpg'">
+    </div>
+    <div class="video-info">
+      <h3>Владислав Калашников. Ария из оперы «Кармен»</h3>
+      <p class="video-meta">Опера Бизе • 2022</p>
+    </div>
+  </div>
+
+  <!-- Видео 5 -->
+  <div class="video-item">
+    <div class="video-thumbnail" onclick="openRutubeVideo('cb00feeaef8fa274d2b6f18661e3654e')">
+      <div class="play-overlay">▶</div>
+      <img src="https://rutube.ru/video-thumbnail/cb00feeaef8fa274d2b6f18661e3654e/" alt="Владислав Калашников. Романс «Снова туда, где море огней»" onerror="this.src='./images/video-placeholder.jpg'">
+    </div>
+    <div class="video-info">
+      <h3>Владислав Калашников. Романс «Снова туда, где море огней»</h3>
+      <p class="video-meta">Сольный концерт • 2021</p>
+    </div>
+  </div>
 
             <!-- Видео 3 -->
             <div class="video-item">
@@ -274,6 +333,7 @@
   <script src="js/video-player.js"></script>
 </body>
 </html>
+
 
 
 
