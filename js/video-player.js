@@ -168,5 +168,39 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+// Новая функция для Rutube (добавь в конец файла)
+function openRutubeVideo(videoId) {
+    const modal = document.getElementById('videoModal');
+    const container = document.getElementById('videoContainer');
+    
+    if (!modal || !container) return;
+    
+    try {
+        // Создаем iframe для Rutube видео
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://rutube.ru/play/embed/${videoId}`;
+        iframe.width = '100%';
+        iframe.height = '100%';
+        iframe.frameBorder = '0';
+        iframe.allow = 'clipboard-write; autoplay';
+        iframe.setAttribute('webkitAllowFullScreen', '');
+        iframe.setAttribute('mozallowfullscreen', '');
+        iframe.setAttribute('allowFullScreen', '');
+        iframe.style.border = 'none';
+        
+        // Очищаем контейнер и добавляем iframe
+        container.innerHTML = '';
+        container.appendChild(iframe);
+        
+        // Показываем модальное окно
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        
+    } catch (error) {
+        console.error('Ошибка при открытии Rutube видео:', error);
+        window.open(`https://rutube.ru/video/private/${videoId}/`, '_blank');
+    }
+}
+
 
 
