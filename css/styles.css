@@ -239,77 +239,6 @@ main {
   font-size: 13px;
   margin: 0;
 }
-/* Стили для модального окна видео */
-.video-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.video-modal[aria-hidden="false"] {
-  opacity: 1;
-  visibility: visible;
-}
-
-.video-modal-content {
-  position: relative;
-  width: 90%;
-  max-width: 1280px;
-  max-height: 80vh;
-}
-
-.video-modal-close {
-  position: absolute;
-  top: -40px;
-  right: 0;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 30px;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-}
-
-.video-modal-close:hover {
-  color: #ffcc00; /* акцентный цвет */
-}
-
-#videoContainer {
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%; /* соотношение 16:9 */
-  position: relative;
-  overflow: hidden;
-}
-
-#videoContainer iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* Адаптивность */
-@media (max-width: 768px) {
-  .video-modal-content {
-    width: 95%;
-    max-width: none;
-  }
-}
-
 
 /* Превью видео на главной */
 .video-preview-grid {
@@ -802,7 +731,7 @@ footer {
   margin-top: 30px;
 }
 
-/* Mobile menu */
+/* Mobile menu
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -837,20 +766,123 @@ footer {
   background: var(--accent);
   color: white;
   border-radius: 4px;
+}  */
+   /* Мобильное меню */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 1001;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
+.mobile-menu[aria-hidden="false"] {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-panel {
+  background: white;
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu[aria-hidden="false"] .menu-panel {
+  transform: translateX(0);
+}
+
+.menu-panel a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: var(--dark-brown);
+  border-bottom: 1px solid var(--light-brown);
+  margin: 5px 0;
+}
+
+.menu-panel a:hover,
+.menu-panel a.active {
+  background: var(--accent);
+  color: white;
+  border-radius: 4px;
+}
+
+.menu-panel a.active {
+  background: var(--accent);
+  color: white;
+}
+
+/* Бургер меню */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--dark-brown);
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background: var(--dark-brown);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.burger div::before,
+.burger div::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: var(--dark-brown);
+  transition: all 0.3s ease;
+}
+
+.burger div::before {
+  top: -8px;
+}
+
+.burger div::after {
+  top: 8px;
+}
+
+
+
+
+
 
 /* Адаптивность */
 @media (max-width: 768px) {
   .main-header {
     padding: 15px 20px;
   }
-  
+  .menu-panel {
+    width: 280px;
+  }
   .topnav {
     display: none;
   }
   
   .burger {
-    display: block;
+    display: flex;
   }
   
   .columns {
@@ -891,6 +923,11 @@ footer {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .brand {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -898,8 +935,11 @@ footer {
     flex-direction: column;
     gap: 15px;
     text-align: center;
+    padding: 10px 15px;
   }
-  
+  .menu-panel {
+     width: 100%;
+  }
   .brand {
     justify-content: center;
   }
@@ -920,4 +960,3 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-
