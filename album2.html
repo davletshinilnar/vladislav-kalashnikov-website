@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Non ti scordar di me… (2005) - Владислав Калашников</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <div class="menu-panel">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+        <div>
+          <h3 style="margin:0;font-family:Playfair Display">Владислав Калашников</h3>
+          <div style="font-size:13px;color:var(--muted)">Баритон</div>
+        </div>
+        <button id="closeMobile" class="btn" aria-label="Закрыть меню">✕</button>
+      </div>
+      <nav style="display:flex;flex-direction:column">
+        <a href="index.html">Главная</a>
+        <a href="bio.html">Биография</a>
+        <a href="albums.html">Альбомы</a>
+        
+        <a href="video.html">Видеозаписи</a>
+        <a href="photos.html">Фотоальбом</a>
+        <a href="repertoire.html">Репертуар</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="site">
+    <header class="main-header">
+      <div class="brand">
+        <div class="logo" style="background-image:url('./images/photo1.jpg');background-size:cover;background-position:center"></div>
+        <div>
+          <h1>Владислав Калашников</h1>
+          <p>Баритон</p>
+        </div>
+      </div>
+
+      <nav class="topnav" aria-label="Главное меню">
+        <a href="index.html">Главная</a>
+        <a href="bio.html">Биография</a>
+        <a href="albums.html">Альбомы</a>
+      
+        <a href="video.html">Видеозаписи</a>
+        <a href="photos.html">Фотоальбом</a>
+        <a href="repertoire.html">Репертуар</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <button id="burger" class="burger" aria-label="Открыть меню"><div></div></button>
+    </header>
+
+    <div class="columns">
+      <main>
+        <section class="card" aria-labelledby="albumTitle">
+          <span id="albumTitle" class="section-title">Non ti scordar di me…</span>
+          <div class="meta">2005 год • Сольной альбом</div>
+
+          <div class="album-detail">
+            <div class="album-main-cover" style="background-image:url('./images/cover2.jpg')"></div>
+            
+            <div class="album-description">
+              <p><strong>Второй сольный CD-альбом арий и романсов</strong> - продолжение творческого пути Владислава Калашникова.</p>
+              
+              <p><strong>Запись сделана в студии "Европа Плюс Йошкар-Ола"</strong></p>
+              
+              <p><strong>11 треков</strong></p>
+              
+              <div class="player" role="region" aria-label="Аудиоплеер">
+                <div class="player-controls">
+                  <button id="prevBtn" class="btn" aria-label="Предыдущий трек">⏮</button>
+                  <button id="playBtn" class="btn primary" aria-label="Воспроизвести">▶︎</button>
+                  <button id="nextBtn" class="btn" aria-label="Следующий трек">⏭</button>
+                  <div style="flex:1;margin-left:8px">
+                    <input id="progress" class="progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Прогресс">
+                  </div>
+                  <div class="time" id="time">00:00 / 00:00</div>
+                </div>
+
+                <audio id="audioNative" preload="metadata"></audio>
+
+                <ul id="trackList" class="track-list" aria-label="Плейлист">
+                  <li data-src="audio/Di_luna.mp3" data-title="Non ti scordar di me">
+                    <div class="track-cover" style="background-image:url('images/cover2.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Дж. Верди — опера "Трубадур" - ария Графа ди Луна</div>
+                      <div class="small">4:25</div>
+                    </div>
+                  </li>
+                  <li data-src="audio\Il_Gladitore.mp3" data-title="Ария из Тоски">
+                    <div class="track-cover" style="background-image:url('images/cover2.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Э. Де Куртис — песня (канцона) "Il Gladiatore"</div>
+                      <div class="small">4:25</div>
+                    </div>
+                  </li>
+                  <li data-src="audio\O sole mio.mp3" data-title="Ария из Князя Игоря">
+                    <div class="track-cover" style="background-image:url('images/cover2.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Э. Капуа "O sole mio"</div>
+                      <div class="small">2:57</div>
+                    </div>
+                  </li>
+                  <li data-src="audio\prologue.mp3" data-title="Романс 'Средь шумного бала'">
+                    <div class="track-cover" style="background-image:url('images/cover2.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Р. Леонкавалло — опера "Паяцы" (Pagliacci) — Пролог</div>
+                      <div class="small">5:18</div>
+                    </div>
+                  </li>
+                  <li data-src="audio\Rigoletto.mp3" data-title="Ария из Дон Паскуале">
+                    <div class="track-cover" style="background-image:url('images/cover2.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Дж. Верди — опера "Риголетто" - ария Риголетто</div>
+                      <div class="small">4:20</div>
+                    </div>
+                  </li>
+                  <li data-src="audio\Santa_lucia.mp3" data-title="Ария из Самсона и Далилы">
+                    <div class="track-cover" style="background-image:url('images/cover2.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Т. Коттрау — традиционная неаполитанская песня (баркарола) "Santa Lucia"</div>
+                      <div class="small">2:18</div>
+                    </div>
+                  </li>
+                  <li data-src="audio\Scarpia.mp3" data-title="Романс 'Я помню чудное мгновенье'">
+                    <div class="track-cover" style="background-image:url('images/cover2.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Дж. Пуччини — опера "Тоска" - ария Барона Скарпиа</div>
+                      <div class="small">4:58</div>
+                    </div>
+                  </li>
+                  <li data-src="audio\Toreador.mp3" data-title="Ария из Сорочинской ярмарки">
+                    <div class="track-cover" style="background-image:url('images/cover2.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Ж. Бизе — опера "Кармен" - Куплеты тореадора</div>
+                      <div class="small">4:39</div>
+                    </div>
+                  </li>
+                  <li data-src="audio\Track01.mp3" data-title="Ария из Евгения Онегина">
+                    <div class="track-cover" style="background-image:url('images/cover2.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Дж. Россини – Опера «Севильский цирюльник» – Каватина Фигаро</div>
+                      <div class="small">5:44</div>
+                    </div>
+                  </li>
+                  <li data-src="audio\Valentine.mp3" data-title="Романс 'О, весна без конца и без краю'">
+                    <div class="track-cover" style="background-image:url('images/cover2.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Ш. Гуно — опера "Фауст" - Ария Валентина</div>
+                      <div class="small">3:59</div>
+                    </div>
+                  </li>
+                  <li data-src="audio\Жермон.mp3" data-title="Ария из Алеко">
+                    <div class="track-cover" style="background-image:url('images/cover2.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Дж. Верди — опера "Травиата" - Ария Жермона</div>
+                      <div class="small">4:39</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <div class="profile card" style="padding:0;overflow:hidden">
+          <div class="profile-photo" style="background-image:url('images/photo1.jpg')"></div>
+          <div style="padding:16px">
+            <div style="font-weight:700;font-family:Playfair Display">Владислав Калашников</div>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">Баритон</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>&copy; <span id="year"></span> Владислав Калашников — все права защищены.</footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/audio-player.js"></script>
+</body>
+</html>
