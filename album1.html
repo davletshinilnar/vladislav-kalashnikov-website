@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Снова туда, где море огней (2002) - Владислав Калашников</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <div class="menu-panel">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+        <div>
+          <h3 style="margin:0;font-family:Playfair Display">Владислав Калашников</h3>
+          <div style="font-size:13px;color:var(--muted)">Баритон</div>
+        </div>
+        <button id="closeMobile" class="btn" aria-label="Закрыть меню">✕</button>
+      </div>
+      <nav style="display:flex;flex-direction:column">
+        <a href="index.html">Главная</a>
+        <a href="bio.html">Биография</a>
+        <a href="albums.html">Альбомы</a>
+       
+        <a href="video.html">Видеозаписи</a>
+        <a href="photos.html">Фотоальбом</a>
+        <a href="repertoire.html">Репертуар</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="site">
+    <header class="main-header">
+      <div class="brand">
+        <div class="logo" style="background-image:url('images/photo1.jpg');background-size:cover;background-position:center"></div>
+        <div>
+          <h1>Владислав Калашников</h1>
+          <p>Баритон</p>
+        </div>
+      </div>
+
+      <nav class="topnav" aria-label="Главное меню">
+        <a href="index.html">Главная</a>
+        <a href="bio.html">Биография</a>
+        <a href="albums.html">Альбомы</a>
+        
+        <a href="video.html">Видеозаписи</a>
+        <a href="photos.html">Фотоальбом</a>
+        <a href="repertoire.html">Репертуар</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <button id="burger" class="burger" aria-label="Открыть меню"><div></div></button>
+    </header>
+
+    <div class="columns">
+      <main>
+        <section class="card" aria-labelledby="albumTitle">
+          <span id="albumTitle" class="section-title">Снова туда, где море огней</span>
+          <div class="meta">2002 год • Сольной альбом</div>
+
+          <div class="album-detail">
+            <div class="album-main-cover" style="background-image:url('images/cover1.jpg')"></div>
+            
+            <div class="album-description">
+              <p><strong>Первый сольный CD-альбом популярных арий</strong> с оркестром театра оперы и балета Республики Марий Эл (дирижёр — Константин Салтыков).</p>
+              
+              <p><strong>Запись сделана в студии "Европа Плюс Йошкар-Ола"</strong></p>
+              
+              <p><strong>12 треков</strong></p>
+              
+              <div class="player" role="region" aria-label="Аудиоплеер">
+                <div class="player-controls">
+                  <button id="prevBtn" class="btn" aria-label="Предыдущий трек">⏮</button>
+                  <button id="playBtn" class="btn primary" aria-label="Воспроизвести">▶︎</button>
+                  <button id="nextBtn" class="btn" aria-label="Следующий трек">⏭</button>
+                  <div style="flex:1;margin-left:8px">
+                    <input id="progress" class="progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Прогресс">
+                  </div>
+                  <div class="time" id="time">00:00 / 00:00</div>
+                </div>
+
+                <audio id="audioNative" preload="metadata"></audio>
+
+                <ul id="trackList" class="track-list" aria-label="Плейлист">
+                  <li data-src="audio/01_R_Leoncavallo_Proloque.mp3" data-title="Р. Леонкавалло - опера 'Паяццы' Пролог">
+                    <div class="track-cover" style="background-image:url('images/cover1.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Р. Леонкавалло - опера 'Паяццы' Пролог</div>
+                      <div class="small">5:16</div>
+                    </div>
+                  </li>
+                  <li data-src="audio/Ария Грязного.mp3" data-title="Ария из Царской невесты">
+                    <div class="track-cover" style="background-image:url('images/cover1.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Н. Римский-Корсаков – «Царская невеста» – Речитатив и ария Грязного</div>
+                      <div class="small">4:57</div>
+                    </div>
+                  </li>
+                  <li data-src="audio/03_G_Verdi_Conte_di_Luna.mp3" data-title="Ария из Риголетто">
+                    <div class="track-cover" style="background-image:url('images/cover1.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Дж. Верди – Опера «Трубадур» – Ария графа де Луна</div>
+                      <div class="small">4:01</div>
+                    </div>
+                  </li>
+                  <li data-src="audio/04_P_Tchaikovsky_Tomsky.mp3" data-title="Ария из Травиаты">
+                    <div class="track-cover" style="background-image:url('images/cover1.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">П. Чайковский – Опера «Пиковая дама» – Песня Томского</div>
+                      <div class="small">2:17</div>
+                    </div>
+                  </li>
+                  <li data-src="audio/05_R_Leoncavallo_Tchatterton.mp3" data-title="Ария из Бал-маскарада">
+                    <div class="track-cover" style="background-image:url('images/cover1.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Р. Леонкавалло – «Чаттертон» – Ария Чаттертона</div>
+                      <div class="small">2:33</div>
+                    </div>
+                  </li>
+                  <li data-src="audio/06_W_Mozart_Don_Giovanni.mp3" data-title="Ария из Дон Жуана">
+                    <div class="track-cover" style="background-image:url('images/cover1.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">В.А. Моцарт – «Дон Жуан» – Ария Дон Жуана</div>
+                      <div class="small">1:48</div>
+                    </div>
+                  </li>
+                  <li data-src="audio/Алеко.mp3" data-title="Романс 'Когда бы жизнь домашним кругом'">
+                    <div class="track-cover" style="background-image:url('images/cover1.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">С. Рахманинов – Опера «Алеко» – Каватина Алеко</div>
+                      <div class="small">5:47</div>
+                    </div>
+                  </li>
+                  <li data-src="audio/08_G_Rossini_Figaro.mp3" data-title="Ария из Фауста">
+                    <div class="track-cover" style="background-image:url('images/cover1.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Дж. Россини – Опера «Севильский цирюльник» – Каватина Фигаро</div>
+                      <div class="small">4:54</div>
+                    </div>
+                  </li>
+                  <li data-src="audio/Веденецкий гость.mp3" data-title="Ария из Кармен">
+                    <div class="track-cover" style="background-image:url('images/cover1.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Н.А Римский-Корсаков – Опера «Садко» – Песня Веденецкого гостя</div>
+                      <div class="small">4:12</div>
+                    </div>
+                  </li>
+                  <li data-src="audio/10_G_Verdi_Renato.mp3" data-title="Ария из Пиковой дамы">
+                    <div class="track-cover" style="background-image:url('images/cover1.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Дж. Верди – Опера «Бал-маскарад» – Ария Ренато</div>
+                      <div class="small">5:17</div>
+                    </div>
+                  </li>
+                  <li data-src="audio/11_G_Verdi_Germont.mp3" data-title="Романс 'О, чём ты воешь в ночи темной'">
+                    <div class="track-cover" style="background-image:url('images/cover1.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">Дж. Верди – Опера «Травиата» – Ария Жермона</div>
+                      <div class="small">3:36</div>
+                    </div>
+                  </li>
+                  <li data-src="audio/12_E_Kalman_Mister_X.mp3" data-title="Ария из Садко">
+                    <div class="track-cover" style="background-image:url('images/cover1.jpg')"></div>
+                    <div class="track-info">
+                      <div class="title">И. Кальман – оперетта «Принцесса цирка» – Ария мистера Икс</div>
+                      <div class="small">4:08</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <div class="profile card" style="padding:0;overflow:hidden">
+          <div class="profile-photo" style="background-image:url('images/photo1.jpg')"></div>
+          <div style="padding:16px">
+            <div style="font-weight:700;font-family:Playfair Display">Владислав Калашников</div>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">Баритон</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>&copy; <span id="year"></span> Владислав Калашников — все права защищены.</footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/audio-player.js"></script>
+</body>
+</html>
+
