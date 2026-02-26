@@ -130,7 +130,7 @@
           </div>
         </section>
         <!-- Видеозаписи (добавить в main секцию) -->
-        <section class="card" aria-labelledby="videoTitle">
+       <section class="card" aria-labelledby="videoTitle">
           <span id="videoTitle" class="section-title">Видеозаписи</span>
           <div class="meta">Последние клипы и выступления</div>
           
@@ -199,13 +199,16 @@
     <footer>&copy; <span id="year"></span> Владислав Калашников — все права защищены.</footer>
   </div>
       <!-- Video Modal -->
-      <div id="videoModal" class="video-modal" aria-hidden="true">
-        <div class="video-modal-content">
-          <button class="video-modal-close" onclick="closeVideoModal()">✕</button>
-          <div id="videoContainer"></div>
-        </div>
-      </div>
+<div id="videoModal" class="video-modal" aria-hidden="true">
+  <div class="video-modal-content">
+    <button class="video-modal-close" onclick="closeVideoModal()">✕</button>
+    <div id="videoContainer"></div>
+  </div>
+</div>
+  
   <script src="js/main.js"></script>
+  <script src="js/video-player.js"></script>
   <script src="js/audio-player.js"></script>
+  
 </body>
 </html>
