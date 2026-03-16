@@ -871,6 +871,9 @@ footer {
 
 /* Адаптивность */
 @media (max-width: 768px) {
+  .hero-inner {
+    display: none;
+  }
   .main-header {
     padding: 15px 20px;
   }
@@ -931,6 +934,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .hero-inner {
+    display: none;
+  }
   .main-header {
     flex-direction: column;
     gap: 15px;
