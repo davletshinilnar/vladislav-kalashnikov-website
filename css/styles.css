@@ -871,8 +871,17 @@ footer {
 
 /* Адаптивность */
 @media (max-width: 768px) {
-  .hero-inner {
+  .hero-text h2 {
     display: none;
+  }
+  
+  .hero-text .cta {
+    display: none;
+  }
+  
+  .hero-text .lead {
+    font-size: 14px;
+    line-height: 1.4;
   }
   .main-header {
     padding: 15px 20px;
@@ -934,8 +943,17 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .hero-inner {
+ .hero-text h2 {
     display: none;
+  }
+  
+  .hero-text .cta {
+    display: none;
+  }
+  
+  .hero-text .lead {
+    font-size: 14px;
+    line-height: 1.4;
   }
   .main-header {
     flex-direction: column;
@@ -952,14 +970,6 @@ footer {
   
   .hero {
     height: 300px;
-  }
-  
-  .hero h2 {
-    font-size: 24px;
-  }
-  
-  .hero .lead {
-    font-size: 16px;
   }
   
   .gallery-grid {
