@@ -109,12 +109,15 @@
   <script src="js/gallery.js"></script>
 
   <!-- Fullscreen gallery viewer -->
-  <div id="viewer" class="viewer" aria-hidden="true" role="dialog" aria-label="Просмотр фотографий">
-    <button id="viewerClose" class="viewer-btn viewer-close" aria-label="Закрыть">✕</button>
-    <button id="viewerPrev" class="viewer-btn viewer-prev" aria-label="Предыдущая фотография">❮</button>
-    <img id="viewerImg" src="" alt="Просмотр фото">
-    <button id="viewerNext" class="viewer-btn viewer-next" aria-label="Следующая фотография">❯</button>
+<div id="viewer" class="viewer" aria-hidden="true" role="dialog" aria-label="Просмотр фотографий">
+  <button id="viewerClose" class="viewer-btn viewer-close" aria-label="Закрыть">✕</button>
+  <button id="viewerPrev" class="viewer-btn viewer-prev" aria-label="Предыдущая фотография">❮</button>
+  <div class="viewer-content">
+    <img id="viewerImg" class="viewer-img" src="" alt="Просмотр фото">
+    <div id="viewerCaption" class="viewer-caption"></div>
   </div>
+  <button id="viewerNext" class="viewer-btn viewer-next" aria-label="Следующая фотография">❯</button>
+</div>
 
 </body>
 </html>
