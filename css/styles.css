@@ -614,11 +614,29 @@ main {
 .viewer[aria-hidden="true"] {
   display: none;
 }
+.viewer-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .viewer img {
   max-width: 90%;
   max-height: 90%;
   object-fit: contain;
+}
+.viewer-caption {
+  color: white;
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+  max-width: 80%;
+  padding: 10px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 4px;
 }
 
 .viewer-btn {
@@ -649,6 +667,29 @@ main {
 
 .viewer-next {
   right: 20px;
+}
+/* Адаптивность для просмотрщика */
+@media (max-width: 768px) {
+  .viewer-content {
+    max-width: 95%;
+    max-height: 95%;
+  }
+  
+  .viewer img {
+    max-height: 70vh;
+  }
+  
+  .viewer-caption {
+    font-size: 14px;
+    max-width: 90%;
+    margin-top: 10px;
+  }
+  
+  .viewer-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
 }
 
 /* Репертуар */
